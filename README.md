@@ -20,6 +20,7 @@ Inside DOWNLOAD block:
 <!-- ELSE -->
 	<form method="post" action="{PAGE_FILE_URL}">
 	{PAGE_DOWNLOAD_VERIFYIMG}<br />
+	{PAGE_DOWNLOAD_VERIFYINPUT}<br />
 		<button type="submit">Download</button>
 	</form>
 <!-- ENDIF -->

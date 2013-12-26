@@ -7,6 +7,11 @@ Hooks=page.download.first
 
 if($usr['id'] == 0 && !empty($cot_captcha) && !isset($_COOKIE['dlveri']))
 {
+
+	if($cfg['plugin']['pagedlcaptcha']['captcha'] != 'core')
+	{
+		$cfg['captchamain'] = $cfg['plugin']['pagedlcaptcha']['captcha'];
+	}
 	if($_SERVER['REQUEST_METHOD'] != 'POST' || !cot_captcha_validate(cot_import('rverify', 'P', 'TXT')))
 	{
 		if($cfg['plugin']['pagedlcaptcha']['error'])

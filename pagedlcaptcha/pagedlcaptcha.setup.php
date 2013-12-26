@@ -22,5 +22,6 @@ Recomments_plugins=
 [BEGIN_COT_EXT_CONFIG]
 expire=01:select:86400,172800,259200,345600,432000,518400,604800:86400:
 error=2:radio::0:
+captcha=03:callback:pagedlcaptcha_captcha_list():core:
 [END_COT_EXT_CONFIG]
 ==================== */
